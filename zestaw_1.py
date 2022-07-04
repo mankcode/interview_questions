@@ -9,10 +9,6 @@
 # 4. I added '-' between numbers
 # 5. Returned list of postall codes
 
-# def postal_code_generator(input_str1,input_str2):
-#     list = [str(element) for element in range(int("".join(input_str1[:2]+input_str1[3:])), int("".join(input_str2[:2]+input_str2[3:])))]
-#     return [(x[:2]+'-'+ x[2:]) for x in list]
-
 
 def postal_code_generator(input_str1,input_str2):
     return [(x[:2]+'-'+ x[2:]) for x in [str(element) for element in range(int("".join(input_str1[:2]+input_str1[3:])), int("".join(input_str2[:2]+input_str2[3:])))]]
